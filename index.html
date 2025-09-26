@@ -163,13 +163,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
     <script>
-      // INICIALIZAÇÃO DOS COMPONENTES
+    
       const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
       [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
       const toastLiveExample = document.getElementById('liveToast');
       const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
 
-      // SIMULAÇÃO DE CARREGAMENTO (SPINNER)
+
       window.addEventListener('DOMContentLoaded', () => {
         const spinner = document.getElementById('loading-spinner');
         const content = document.getElementById('courses-container');
@@ -179,7 +179,7 @@
         }, 2000);
       });
 
-      // FUNÇÕES DE FEEDBACK (ALERT E TOAST)
+
       const alertPlaceholder = document.getElementById('alert-placeholder');
       const appendAlert = (message, type) => {
         const wrapper = document.createElement('div');
@@ -188,7 +188,7 @@
         alertPlaceholder.append(wrapper);
       }
 
-      // VALIDAÇÃO DE FORMULÁRIO
+
       const form = document.querySelector('.needs-validation');
       form.addEventListener('submit', event => {
         event.preventDefault();
